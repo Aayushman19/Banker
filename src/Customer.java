@@ -16,21 +16,27 @@ public class Customer {
     public String name;
     public String address;
 
+    boolean flag = false;
+
     public void login(int uid, String pass) {
-        if(uid == user_id && pass == password){
+        if (uid == user_id && pass == password) {
             System.out.println("User Logged In Successfully!");
             System.out.println("Welcome" + " " + name);
             System.out.println("Address" + " : " + address);
-        }
-        else{
+            flag = true;
+        } else {
             System.out.println("Invalid ID or Password");
             return;
         }
     }
 
     public void logout() {
-        System.out.println("Logged out successfully");
-        return;
+        if (flag) {
+            System.out.println("Logged out successfully");
+            return;
+        } else {
+            System.out.println("Login before Logging out");
+        }
     }
 
 }
