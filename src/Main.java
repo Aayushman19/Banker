@@ -10,7 +10,7 @@ public class Main {
         ChequeStatus cStatus = new ChequeStatus(1001, str);
         cStatus.cheque_status();
 
-        StopCheque sCheque = new StopCheque();
+        StopCheque sCheque = new StopCheque(1001);
         sCheque.stop_cheque();
 
     }
