@@ -4,8 +4,9 @@ import java.util.*;
 @SuppressWarnings("unused")
 public class StopCheque extends ChequeStatus {
 
-    public StopCheque() {
+    public StopCheque(int acc_no) {
         super(cheque_no, cheque_date);
+        this.acc_no = acc_no;
     }
 
     public int acc_no;
