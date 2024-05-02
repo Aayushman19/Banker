@@ -5,6 +5,7 @@ import java.util.*;
 public class IssueCheque extends ChequeStatus {
 
     public IssueCheque(int acc_no, String date) {
+        super(acc_no, date);
         this.date = date;
         this.acc_no = acc_no;
     }
